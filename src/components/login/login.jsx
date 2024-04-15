@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import "./login.scss";
-
+import {useNavigate} from "react-router-dom"
 const Login = () => {
+  const navigate = useNavigate();
+
+  const handleClick=()=>{
+    navigate("/feed")
+  }
   return (
     <div className="login">
       <div className="left-section">
@@ -12,7 +17,7 @@ const Login = () => {
           <input type="text" placeholder="Please Enter Your Email" />
           <label htmlFor="">Password</label>
           <input type="password" placeholder="Please Enter Your Password" />
-          <button>Login</button>
+          <button onClick={handleClick}>Login</button>
         </div>
         <p >
           Don't have an account? <Link to="/signup" >Sign up</Link>

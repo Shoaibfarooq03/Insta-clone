@@ -1,4 +1,143 @@
-.profile{
-       
-      
+.profile {
+  position: relative;
+  .profileimage {
+    img {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: -510px;
+      margin-left: 150px;
+      width: 1270px;
+      height: 237px;
+    }
+  }
+  .userImage {
+    img {
+      position: absolute;
+      top: 100px;
+      left: 25%;
+      transform: translateX(-50%);
+      margin-top: -310px;
+      margin-left: -20px;
+    }
+    h2 {
+      position: absolute;
+      top: 100px;
+      left: 25%;
+      margin-top: -260px;
+      margin-left: 55px;
+    }
+    button {
+      position: absolute;
+      top: 100px;
+      left: 25%;
+      color: #6b6e75;
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid #cbd1d7;
+      height: 40px;
+      width: 100px;
+      margin-top: -255px;
+      margin-left: 1070px;
+    }
+  }
+
+  .follower {
+    position: absolute;
+    top: -70px; /* Adjust this value as needed */
+    left: 305px;
+    display: flex;
+    gap: 50px;
+    width: 305px;
+    height: 85px;
+    background-color: #f4f6f7;
+    border-radius: 8px;
+
+    .stat {
+      margin-top: 20px;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .count {
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+      .label {
+        color: #878a8f;
+      }
+    }
+  }
+
+  .about {
+    position: absolute;
+    top: 40px;
+    left: 305px;
+    display: flex;
+    gap: 50px;
+    width: 305px;
+    height: 300px;
+    background-color: #f4f6f7;
+    border-radius: 8px;
+
+    .title {
+      h3 {
+        margin-left: 25px;
+      }
+    }
+    .detail {
+      p {
+        margin-top: 55px;
+        margin-left: -105px;
+        font-size: 14px;
+        color: #3a3f49;
+      }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 100px;
+        margin-left: -620px;
+        svg{
+            // margin-top: 50px;
+            margin-left: 330px;
+        }
+        p{
+            margin-top: -20px;
+            margin-left: 370px;
+        }
+    }
+  }
+
+  .images{
+    display: flex;
+
+    .pic1{
+        margin-left: 660px;
+        margin-top: -70px;
+        width: 400px;
+        height: 223px;
+    }
+    .pic2{
+        margin-left: 60px;
+        margin-top: -70px;
+        width: 400px;
+        height: 223px;
+    }
+    .pic3{
+        margin-left: -860px;
+        margin-top: 190px;
+        width: 400px;
+        height: 223px;
+    }
+    .pic4{
+        margin-left: 60px;
+        margin-top: 190px;
+        width: 400px;
+        height: 223px;
+    }
+  }
 }

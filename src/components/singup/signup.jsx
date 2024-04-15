@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import "./signup.scss";
-
+import {useNavigate} from "react-router-dom"
 const SignUp = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick=()=>{
+    navigate("/feed")
+  }
   return (
     <div className="signup">
        <div className="left-section">
@@ -14,7 +20,7 @@ const SignUp = () => {
           <input type="text" id="email" placeholder="Please Enter Your Email" />
           <label htmlFor="password">Password</label>
           <input type="password" id="password" placeholder="Please Enter Your Password" />
-          <button>Sign up</button>
+          <button onClick={handleClick}>Sign up</button>
         </div>
         <p>
           Already have an account? <Link to="/login">Login</Link>
