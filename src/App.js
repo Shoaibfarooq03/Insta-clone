@@ -17,7 +17,7 @@ function App() {
             path="/*"
             element={
               <>
-                <SidebarNavbar /> {/* Include the navbar and sidebar component here */}
+                <SidebarNavbar /> 
                 <Routes>
                  
                   <Route path="/profile" element={<Profile/>} />
