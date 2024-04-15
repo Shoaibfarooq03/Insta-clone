@@ -3,16 +3,28 @@ import Login from "./components/login/login";
 import SignUp from "./components/singup/signup"; 
 import Home from "./components/home/home";
 import Profile from "./components/profile/profile";
+import SidebarNavbar from "./components/sidebar-navbar/side-navb";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route exact path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} /> 
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/feed" element={<Home/>} />
-          <Route path="/profile" element={<Profile/>} />
+          <Route
+            path="/*"
+            element={
+              <>
+                <SidebarNavbar /> {/* Include the navbar and sidebar component here */}
+                <Routes>
+                 
+                  <Route path="/profile" element={<Profile/>} />
+                </Routes>
+              </>
+            }
+          />
         </Routes>
       </div>
     </Router>
